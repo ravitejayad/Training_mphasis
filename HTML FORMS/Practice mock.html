@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Class Work</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent {
+            width: 1000px;
+            height: 800px;
+            background: linear-gradient(90deg, darkblue, aqua);
+            position: relative;
+            left: 300px;
+            margin: 50px;
+
+        }
+
+        .child {
+            height: 600px;
+            width: 700px;
+            background-color: aliceblue;
+            position: absolute;
+            left: 300px;
+            top: 100px;
+            border-radius: 20% 0 0 20%;
+        }
+
+       #btn {
+            width: 130px;
+            height: 50px;
+            border-radius: 50px;
+            position: absolute;
+            top: 500px;
+            left: 100px;
+            font-size: large;
+            padding: 5px;
+        }
+
+        .text {
+            height: 100px;
+            width: 200px;
+            color: ghostwhite;
+            text-align: center;
+            position: absolute;
+            top: 280px;
+            left: 50px;
+            font-style: italic;
+        }
+
+        h2 {
+            font-style: italic;
+            text-align: center;
+            position: relative;
+            font-size: 30px;
+            top: 90px;
+        }
+
+        .Emp {
+            position: relative;
+            top: 100px;
+            left: 150px;
+
+        }
+
+        #form-control {
+            padding: 50px;
+        }
+
+        td {
+            padding: 10px;
+            height: 30px;
+        }
+
+        #btn2 {
+            background-color: blue;
+            text-align: center;
+            font-size: large;
+            font-style: italic;
+            color: ghostwhite;
+            font-weight: 100;
+            padding: 10px;
+            border-radius: 30%;
+            position: absolute;
+            left: 300px;
+        }
+
+        input {
+            padding: 10px;
+        }
+
+
+        .main {
+            display: flex;
+            position: relative;
+            left: 500px;
+            top: 10px;
+            width: 200px;
+            height: 50px;
+            background-color: blue;
+            border-radius: 20px;
+        }
+
+        .empl {
+            background-color: white;
+            color: blue;
+            width: 50%;
+            border-radius: 20px ;
+            border: solid blue;
+            margin: 2px;
+                }
+        #hire{
+            width: 80px;
+            background-color: blue;
+            color: ghostwhite;
+            border: solid blue;
+            position: relative;
+            top: 15px;
+            left: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="text">
+            <h1>Welcome</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, eveniet.</p>
+        </div>
+        <button id="btn"><b>Login</b></button>
+        <div class="child">
+            <div class="main">
+
+
+                <button class="empl">Employee</button>
+
+
+                <div><button id="hire"> Hire</button></div>
+
+
+            </div>
+            <h2>Apply as a Employee</h2>
+            <form action="" class="Emp">
+                <table>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder="First Name*"></td>
+                        <td><input type="text" class="form-control" placeholder="Your Email*"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder="Last Name*"></td>
+                        <td><input type="text" class="form-control" placeholder="Your Place*"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="Password" class="form-control" placeholder="Password*"></td>
+                        <td>
+                            <select name="Please Select" id="">
+                                <option value="">India</option>
+                                <option value="">USA</option>
+                                <option value="">UK</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="Password" class="form-control" placeholder="Conferm Password*"></td>
+                        <td><input type="text" placeholder="Enter Your Answer*"></td>
+                    </tr>
+                    <tr>
+                        <td id="radio">
+
+                            <input type="radio" class="form-control" name="Gender">Male
+                            <input type="radio" class="form-control" name="Gender">FeMale
+                            <input type="radio" class="form-control" name="Gender">other
+
+                        </td>
+                    </tr>
+
+                </table>
+                <button id="btn2">Register</button>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>

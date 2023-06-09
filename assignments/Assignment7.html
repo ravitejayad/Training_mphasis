@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 7</title>
+    <style>
+        .container{
+            width: 300px;
+            height: 450px;
+            border: 2px solid black;
+            box-shadow: 0 0 15px black;
+            position: relative;
+            left: 600px;
+            top:100px;
+            overflow: hidden;
+        }
+        .container img{
+            width: inherit;
+            height: inherit;
+        }
+        .container:hover img{
+            transform: scale(1.5,1.5);
+            transition-delay: 2s;
+        }
+        .left-door{
+            background-color: brown;
+            position: absolute;
+            width: 50%;
+            height: inherit;
+            top: 0;
+            left: 0;
+            transform-origin: left;
+            transition-duration: 2s;
+         }
+        .container:hover .left-door{
+        transform: perspective(400px) rotateY(90deg);
+      }
+      .right-door{
+        background-color: brown;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height:inherit;
+            transform-origin: right;
+            transition-duration: 2s;;
+         }
+      .container:hover .right-door{
+        transform: perspective(400px) rotateY(-90deg);
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.pinimg.com/474x/1f/38/93/1f389315e9615de2d9ddc2ab22909087.jpg" alt="">
+        <div class="left-door"></div>
+        <div class="right-door"></div>
+    </div>
+</body>
+</html>

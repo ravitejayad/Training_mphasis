@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Header and footer</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        span:nth-child(1){
+            color: orange;
+        }
+        span:nth-child(2){
+            color: ghostwhite;
+        }
+        header{
+            padding: 1px 0;
+            background-image: url("https://media.istockphoto.com/id/1339208801/photo/japanese-paper-and-autumn-leaves-background-orange-to-yellow-gradation.jpg?b=1&s=170667a&w=0&k=20&c=sP7tz6VEB9lOB1lJJx5J4MTfOyuoFmsWJaNzt8JCQxU=");
+            font-size: 15px;
+        }
+        footer{
+            text-align: center;
+            color: ghostwhite;
+            padding: 1px 0;
+            background-image: url("https://media.istockphoto.com/id/1339208801/photo/japanese-paper-and-autumn-leaves-background-orange-to-yellow-gradation.jpg?b=1&s=170667a&w=0&k=20&c=sP7tz6VEB9lOB1lJJx5J4MTfOyuoFmsWJaNzt8JCQxU=");
+            font-size: 20px;
+        }
+        section{
+            background: linear-gradient(45deg,yellow,orangered);
+            display: flex;
+            justify-content: center;
+        }
+        img{
+            height: 200px;
+            width: 300px;
+        }
+        article{
+            margin: 5px;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 15px;
+        }
+        h2{
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            font-style: italic;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="home"><span>J</span><span>Spiders</span></h1>
+    </header>
+    <section>
+        <article>
+            <img src="https://brandslogos.com/wp-content/uploads/thumbs/java-logo-vector-1.svg" alt="">
+            <h2>Java Full-Stack</h2>
+            <ul>
+                <li>Core Java</li>
+                <li>Advance Java</li>
+                <li>Spring and Hibernate</li>
+                <li>Sql</li>
+                <li>Web-Tech</li>
+                <li>Aptitude</li>
+                <li>Placements</li>
+            </ul>
+        </article>
+        <article>
+            <img src="https://www.pngall.com/wp-content/uploads/2016/05/Python-Logo-Free-Download-PNG.png" alt="">
+            <h2>Python Full-Stack</h2>
+            <ul>
+                <li>Core Python</li>
+                <li>Advance Python</li>
+                <li>Django</li>
+                <li>Sql</li>
+                <li>Web-Tech</li>
+                <li>Aptitude</li>
+                <li>Placements</li>
+            </ul>
+        </article>
+        <article>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/MERN-logo.png" alt="">
+            <h2>MERN Full-Stack</h2>
+            <ul>
+                <li>Mongo Db</li>
+                <li>React Js</li>
+                <li>Express Js</li>
+                <li>Node Js</li>
+                <li>Web-Tech</li>
+                <li>Aptitude</li>
+                <li>Placements</li>
+            </ul>
+        </article>
+    </section>
+    <footer>
+        <h3>CopyRights &copy 2023 JSpiders</h3>
+        <p>Address: 761/1, 3rd Floor, Outer Ring Rd, next to Chaitanya Techno School, near KLM Mall, Marathahalli, Bengaluru, Karnataka 560037</p>
+        <button>
+            <a href="#home">Home</a>
+        </button>
+    </footer>
+</body>
+</html>

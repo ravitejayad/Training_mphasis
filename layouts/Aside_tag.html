@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Aside</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        aside{
+            float: left;
+            background: linear-gradient(45deg,lightblue,lightgreen);
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        a{
+            font-style: italic;
+            text-decoration: none;
+            font-size: 30px;
+            padding: 15px;
+            margin: 15px;
+            color: black;
+        }
+        a:hover{
+            background: linear-gradient(45deg,darkblue,darkgreen);
+            color: ghostwhite;
+            border: 2px solid white;
+            border-radius: 50px;
+            text-align: center;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 30%;
+            border: 2px solid black;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <aside class="animate__animated  animate__backInLeft">
+        <img src="https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/user-profile-icon.png" alt="">
+        <a href="">HTML</a>
+        <a href="">CSS</a>
+        <a href="">JS</a>
+        <a href="">Bootstrap</a>
+        <a href="">React</a>
+    </aside>
+</body>
+</html>
