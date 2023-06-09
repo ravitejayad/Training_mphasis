@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+        @media screen and (max-width:500px) {
+            body{
+                background-color: red;
+                color: ghostwhite;
+            }
+            #tab,#laptop,#tv{
+                display: none;
+            }
+        }
+        @media (min-width:501px) and (max-width:750px) {
+            body{
+                background-color: green;
+                color: ghostwhite;
+            }
+            #mobile,#laptop,#tv{
+                display: none;
+            }
+        }
+        @media (min-width:751px) and (max-width:1250px) {
+            body{
+                background-color: blue;
+                color: ghostwhite;
+            }
+            #mobile,#tab,#tv{
+                display: none;
+            }
+        }
+        @media (min-width:1251px) {
+            body{
+                background-color: orange;
+                color: ghostwhite;
+            }
+            #mobile,#tab,#laptop{
+                display: none;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 id="mobile">mobile screen from 0-500px</h1>
+    <h1 id="tab">tab screen from 501px-750px</h1>
+    <h1 id="laptop">laptop screen from 751px-1250px</h1>
+    <h1 id="tv">tv screen >1251px</h1>
+</body>
+</html>
